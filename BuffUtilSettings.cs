@@ -232,11 +232,11 @@ namespace BuffUtil
 
         #region Corrupting Fever
 
-        [Menu("Corrupting Fever", 9)] public ToggleNode CorruptingFever { get; set; }
+        [Menu("Corrupting Fever", 11)] public ToggleNode CorruptingFever { get; set; }
 
-        [Menu("Corrupting Fever Key", 1, 9)] public HotkeyNode CorruptingFeverKey { get; set; }
+        [Menu("Corrupting Fever Key", 1, 11)] public HotkeyNode CorruptingFeverKey { get; set; }
 
-        [Menu("Max HP", "HP percent above which skill is not cast", 2, 9)]
+        [Menu("Max HP", "HP percent above which skill is not cast", 2, 11)]
         public RangeNode<int> CorruptingFeverMaxHP { get; set; }
 
         #endregion
