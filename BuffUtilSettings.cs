@@ -62,6 +62,10 @@ namespace BuffUtil
             ScourgeArrowUseLeftClick = new ToggleNode(false);
             ScourgeArrowWaitForInfused = new ToggleNode(true);
 
+            CorruptingFever = new ToggleNode(false);
+            CorruptingFeverKey = new HotkeyNode(Keys.E);
+            CorruptingFeverMaxHP = new RangeNode<int>(30, 0, 100);
+
             RequireMinMonsterCount = new ToggleNode(false);
             NearbyMonsterCount = new RangeNode<int>(1, 1, 30);
             NearbyMonsterMaxDistance = new RangeNode<int>(500, 1, 2000);
@@ -223,6 +227,17 @@ namespace BuffUtil
 
         [Menu("Wait for Infused Channeling buff", "Wait for Infused Channeling buff before release", 103, 10)]
         public ToggleNode ScourgeArrowWaitForInfused { get; set; }
+
+        #endregion
+
+        #region Corrupting Fever
+
+        [Menu("Corrupting Fever", 9)] public ToggleNode CorruptingFever { get; set; }
+
+        [Menu("Corrupting Fever Key", 1, 9)] public HotkeyNode CorruptingFeverKey { get; set; }
+
+        [Menu("Max HP", "HP percent above which skill is not cast", 2, 9)]
+        public RangeNode<int> CorruptingFeverMaxHP { get; set; }
 
         #endregion
 

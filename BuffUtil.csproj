@@ -10,14 +10,14 @@
     <OutputPath>..\..\..\..\PoEHelper\Plugins\Compiled\BuffUtil\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\Core.csproj">
-      <Private>False</Private>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="lib\System.Windows.Forms.dll" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="InputSimulatorCore" Version="1.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ExileCore">
+      <HintPath>..\..\1.Path stuff\PoEHelper-TehCheat\ExileCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

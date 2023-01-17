@@ -117,6 +117,14 @@ namespace BuffUtil
             public const string BuffName = "virulent_arrow_counter";
         }
 
+        public static class CorruptingFever
+        {
+            public const string BuffName = "blood_surge";
+            public const string Name = "CorruptingFever";
+            public const string InternalName = "blood_surge";
+            public static readonly TimeSpan TimeBetweenCasts = TimeSpan.FromSeconds(7);
+        }
+
         public static class InfusedChanneling
         {
             public const string BuffName = "storm_barrier_support_damage";
