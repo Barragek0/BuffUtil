@@ -87,6 +87,7 @@ namespace BuffUtil
                 HandleWitheringStep();
                 HandleWarcry();
                 HandleBerserk();
+                HandleCorruptingFever();
             }
             catch (Exception ex)
             {
